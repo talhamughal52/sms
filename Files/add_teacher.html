@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>PROJECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="check.css">
+</head>
+
+<body>
+    <!--Main Navigation-->
+    <header class="navbar navbar-expand-lg navbar-dark bd-navbar sticky-top"
+        style="background-color: rgb(54 130 88); height: 95px; margin-left: 240px; width: 1040px; width: auto;">
+        <div style="margin-left: 15px; margin-top: 7px;">
+            <h1><strong>SCHOOL MANAGEMENT SYSTEM</strong></h1>
+        </div>
+        <div style="margin-left: 120px;">
+            <h6 style="margin-top: 7px; text-align: right; width: 205px;"><strong>Admin</strong></h6>
+        </div>
+        <div style="margin-left: -20px;">
+            <div
+                style=" margin-left: 31px; height: 39px; width: 39px; border: 2px solid white; background-color: white ; border-radius: 46px;">
+                <img style="width: 35px; height: 32px; padding-right: 2px;" src="avatar.png">
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse"
+        style=" margin-top: -18px; background-color: rgb(54 130 88);">
+        <div class="position-sticky">
+            <div
+                style="margin-top: -30px; margin-left: 78px; height: 78px; width: 77px; border: 2px solid white; background-color: white ; border-radius: 46px;">
+                <img style="width: 74px; height: 65px; padding-right: 3px;" src="avatar.png">
+            </div>
+            <h5 style="margin-top: 20px; margin-left: 30px; text-align: center; width: 172px;"><strong>ADMIN</strong>
+            </h5>
+            <div class="list-group list-group-flush mx-3 mt-4">
+                <a href="dashboard.html" class="list-group-item list-group-item-action py-2 ripple" aria-current="true"
+                    style="background-color: silver; margin-top: -6px; border-radius: 22px; margin: 2px; ">
+                    <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Home</span>
+                </a>
+                <a href="notification.html" class="list-group-item list-group-item-action py-2 ripple"
+                    style="background-color: silver; border-radius: 22px; margin: 2px;">
+                    <i class="fas fa-chart-area fa-fw me-3"></i><span>Notification</span>
+                </a>
+                <a href="settings.html" class="list-group-item list-group-item-action py-2 ripple"
+                    style="background-color: silver; border-radius: 22px; margin: 2px;"><i
+                        class="fas fa-lock fa-fw me-3"></i><span>Settings</span></a>
+                <a href="#" class="list-group-item list-group-item-action py-2 ripple"
+                    style="background-color: silver; border-radius: 22px; margin: 2px;"><i
+                        class="fas fa-lock fa-fw me-3"></i><span>Upload Challan</span></a>
+                <a id="signout" class="list-group-item list-group-item-action py-2 ripple"
+                    style="background-color: silver; border-radius: 22px; margin: 2px; margin-top: 15px; "><i
+                        class="fas fa-lock fa-fw me-3"></i><span><strong style="margin-left: 33px;">Sign
+                            out</strong></span></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container"
+        style="margin-left: 240px; width: 1036px; width: auto; background-color: #cdcdcd; padding-top: 0px; padding-left: 0px; padding-bottom: 5px; min-height: 514px; height: auto;">
+        <div
+            style="margin-right: -12px; padding-left: 19px; padding-top: 6px; background-color: rgb(140 140 140); padding-bottom: 0px; border: 5px solid black;">
+            <h4><strong>Add Teacher</strong></h4>
+        </div>
+        <div class="container" style="margin-right: -12px; margin-top: 15px; width: auto;">
+
+            <div style="width: auto;">
+
+                <div class="container" style="width: 840px; margin-top: 10px;">
+
+                    <!-- <form action=""> -->
+                    <div class="form-group row" style="margin: 5px;">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">First name</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="first_name" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin: 5px; margin-bottom: 25px;">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Last Name</label>
+                        <div class="col-sm-10">
+                            <input type="name" class="form-control" id="last_name" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin: 5px">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Subject</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+
+                    <div class="form-group row" style="margin: 5px">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Address</label>
+                        <div class="col-sm-10">
+                            <input type="address" class="form-control" id="address" placeholder="Address">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin: 5px; margin-bottom: 25px;">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Phone</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="phone" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin: 5px">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="mail" class="form-control" id="mail" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin: 5px">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Secret Code</label>
+                        <div class="col-sm-10">
+                            <input type="Password" class="form-control" id="code" placeholder="Code">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 5px; margin-top: 25px;">
+                        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="gender_male"
+                                    value="Male">
+                                <label class="form-check-label" for="gridRadios1">
+                                    Male
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="gender_female"
+                                    value="Female">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Female
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row" style="margin: 5px; margin-top: 20px; ">
+
+                        <div class="col-sm-10">
+                            <button id="submit" style="background-color: rgb(54 130 88);" class="btn btn-primary">Add
+                                Teacher</button>
+                        </div>
+                        <div id="notify" style=" margin-top: 15px; height: 45px; border-radius: 3px;">
+                            <!-- <h5 style="margin-top: 9px" >Student Added Successfully!</h5> -->
+                        </div>
+                    </div>
+                    <!-- </form> -->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="add_teacher.js"></script>
+
+
+</html>
